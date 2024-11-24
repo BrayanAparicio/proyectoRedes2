@@ -235,14 +235,26 @@ end
 #### **Switch L2-1*
 
 ```bash
+enable
 configure terminal
-router bgp 100
-neighbor 84.218.145.18 remote-as 200
-redistribute ospf 1
-router ospf 1
-redistribute bgp 100 subnets
+vlan 10
+name VLAN10
+vlan 20
+name VLAN20
+exit
+interface GigabitEthernet 0/1
+switchport mode access
+switchport access vlan 10
+exit
+interface GigabitEthernet 0/2
+switchport mode access
+switchport access vlan 20
+exit
+interface GigabitEthernet 0/0
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk allowed vlan add 10,20
 end
-wr
 ```
 
 ### **Verificación de las Conexiones**
