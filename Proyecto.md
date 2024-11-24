@@ -543,7 +543,7 @@ authentication pre-share
 group 2
 lifetime 86400
 crypto isakmp key PASSWORD address 84.218.145.1
-interface fastEthernet 0/1
+interface fastEthernet 0/0
 crypto map WIRED
 ```
 
@@ -565,7 +565,7 @@ authentication pre-share
 group 2
 lifetime 86400
 crypto isakmp key PASSWORD address 84.218.153.2
-interface fastEthernet 0/1
+interface fastEthernet 0/0
 crypto map WIRED
 end
 ```
@@ -588,7 +588,7 @@ authentication pre-share
 group 2
 lifetime 86400
 crypto isakmp key PASSWORD address 84.218.153.1
-interface fastEthernet 0/1
+interface fastEthernet 1/0
 crypto map WIRED
 wr
 ```
