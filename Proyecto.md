@@ -161,7 +161,6 @@ ip address 84.218.145.10 255.255.255.252
 no shutdown
 exit
 interface fastEthernet 1/0
-no switchport
 ip address 84.218.145.17 255.255.255.252
 no shutdown
 exit
@@ -331,12 +330,12 @@ ip address 84.218.153.5 255.255.255.252
 no shutdown
 exit
 interface fastEthernet 0/1
-ip address 84.218.153.14 255.255.255.252
+ip address 84.218.153.2 255.255.255.252
 no shutdown
 exit
 interface fastEthernet 1/0
 no switchport
-ip address 84.218.153.2 255.255.255.252
+ip address 84.218.153.14 255.255.255.252
 no shutdown
 exit
 end
@@ -381,7 +380,6 @@ ip address 84.218.153.6 255.255.255.252
 no shutdown
 exit
 interface fastEthernet 0/0
-no switchport
 ip address 84.218.145.18 255.255.255.252
 no shutdown
 exit
@@ -588,7 +586,7 @@ authentication pre-share
 group 2
 lifetime 86400
 crypto isakmp key PASSWORD address 84.218.153.1
-interface fastEthernet 1/0
+interface fastEthernet 0/1
 crypto map WIRED
 wr
 ```
