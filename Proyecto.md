@@ -210,25 +210,11 @@ end
 #### **Router 4**
 
 ```bash
-enable
 configure terminal
-vlan 10
-name students
-vlan 20
-name professors
-exit
-interface GigabitEthernet 0/1
-switchport mode access
-switchport access vlan 10
-exit
-interface GigabitEthernet 0/2
-switchport mode access
-switchport access vlan 20
-exit
-interface GigabitEthernet 0/0
-switchport trunk encapsulation dot1q
-switchport mode trunk
-switchport trunk allowed vlan add 10,20
+router ospf 1
+network 160.223.145.8 0.0.0.3 area 0
+network 160.223.145.12 0.0.0.3 area 0
+network 160.223.145.16 0.0.0.3 area 2
 end
 ```
 ### **Configuración del Vlan**
