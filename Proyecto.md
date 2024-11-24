@@ -129,12 +129,12 @@ show ip interface brief
 enable
 configure terminal
 interface fastEthernet 0/0
-ip address 84.218.145.9 255.255.255.252
+ip address 84.218.145.6 255.255.255.252
 no shutdown
 exit
 interface FastEthernet 1/0
 no switchport
-ip address 84.218.145.6 255.255.255.252
+ip address 84.218.145.9 255.255.255.252
 no shutdown
 exit
 interface FastEthernet 0/1
