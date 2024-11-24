@@ -114,7 +114,6 @@ ip address 84.218.145.5 255.255.255.252
 no shutdown
 exit
 interface FastEthernet 1/0
-no switchport
 ip address 84.218.145.14 255.255.255.252
 no shutdown
 exit
@@ -138,7 +137,6 @@ ip address 84.218.145.9 255.255.255.252
 no shutdown
 exit
 interface FastEthernet 0/1
-no switchport
 ip address 84.218.147.1 255.255.255.0
 no shutdown
 exit
@@ -334,7 +332,6 @@ ip address 84.218.153.2 255.255.255.252
 no shutdown
 exit
 interface fastEthernet 1/0
-no switchport
 ip address 84.218.153.14 255.255.255.252
 no shutdown
 exit
@@ -590,7 +587,7 @@ lifetime 86400
 crypto isakmp key PASSWORD address 84.218.153.1
 interface fastEthernet 0/1
 crypto map WIRED
-wr
+end
 ```
 
 ### **Comandos de Verificación para IPsec**
