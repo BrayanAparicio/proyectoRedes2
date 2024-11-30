@@ -209,9 +209,9 @@ end
 ```bash
 configure terminal
 router ospf 1
-network 160.223.145.8 0.0.0.3 area 0
-network 160.223.145.12 0.0.0.3 area 0
-network 160.223.145.16 0.0.0.3 area 2
+network 84.218.145.8 0.0.0.3 area 0
+network 84.218.145.12 0.0.0.3 area 0
+network 84.218.145.16 0.0.0.3 area 2
 end
 ```
 ### **Configuración del Vlan**
